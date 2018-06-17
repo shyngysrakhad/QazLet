@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_size">200dp</dimen>
+    <dimen name="poet_description">14dp</dimen>
+    <dimen name="title">18dp</dimen>
+    <dimen name="poem">24dp</dimen>
+    <dimen name="small_button">20dp</dimen>
+    <dimen name="small_padding">5dp</dimen>
+</resources>

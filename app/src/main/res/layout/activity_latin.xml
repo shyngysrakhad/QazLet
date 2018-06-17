@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_latin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabhost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:inputType="textMultiLine"
+                                android:hint="Введите текст на казахском"
+                                android:id="@+id/text_cyrillic"
+                                android:gravity="left"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:textSize="@dimen/small_button"
+                                android:backgroundTint="@android:color/background_light" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimary"
+                                android:id="@+id/latin_part">
+
+                                <Button
+                                    android:id="@+id/button_save"
+                                    style="@style/Widget.AppCompat.Button.Small"
+                                    android:background="@drawable/ic_save"
+                                    android:layout_below="@+id/text_latin"
+                                    android:layout_width="@dimen/small_button"
+                                    android:layout_height="@dimen/small_button"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginBottom="15dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/text_latin"
+                                    android:hint="Текст на латинице"
+                                    android:textSize="@dimen/small_button"
+                                    android:textStyle="bold"
+                                    android:background="@color/colorPrimary"
+                                    android:textColorHint="@android:color/background_light"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:padding="15dp"
+                                    android:textColor="@android:color/background_light" />
+
+                                <Button
+                                    android:id="@+id/button_copy"
+                                    style="@style/Widget.AppCompat.Button.Small"
+                                    android:background="@drawable/ic_copy_content"
+                                    android:layout_below="@+id/text_latin"
+                                    android:layout_toRightOf="@+id/button_save"
+                                    android:layout_toEndOf="@+id/button_save"
+                                    android:layout_width="@dimen/small_button"
+                                    android:layout_height="@dimen/small_button"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginBottom="15dp" />
+                                <Button
+                                    android:id="@+id/button_share"
+                                    style="@style/Widget.AppCompat.Button.Small"
+                                    android:background="@drawable/ic_share"
+                                    android:layout_below="@+id/text_latin"
+                                    android:layout_toRightOf="@+id/button_copy"
+                                    android:layout_toEndOf="@+id/button_copy"
+                                    android:layout_width="@dimen/small_button"
+                                    android:layout_height="@dimen/small_button"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginBottom="15dp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <TextView
+                        android:text="Сохраненные"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_saved"
+                        android:layout_margin="15dp"
+                        android:textSize="@dimen/title"
+                        android:gravity="center" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/list_saved"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/list_alphabet" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/list_literature" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

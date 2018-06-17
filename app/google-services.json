@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "603839887519",
+    "firebase_url": "https://qazlet-3c1d7.firebaseio.com",
+    "project_id": "qazlet-3c1d7",
+    "storage_bucket": "qazlet-3c1d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603839887519:android:42ab3363aa5bd74a",
+        "android_client_info": {
+          "package_name": "com.a4devspirit.a1.qazlet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603839887519-08hvlrkbs0kjdj69rplfiprdedu814sm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.a4devspirit.a1.qazlet",
+            "certificate_hash": "251f0d10640b6597b04a083a2f7430a8ff7518c1"
+          }
+        },
+        {
+          "client_id": "603839887519-bhbc42rai83n3v150t3650h0ku40oo9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGYR_vm4KpQKNz5Ev4THSt4uw_vjoEtwA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603839887519-bhbc42rai83n3v150t3650h0ku40oo9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

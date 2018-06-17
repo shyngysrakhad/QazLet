@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_size">300dp</dimen>
+    <dimen name="poet_description">24dp</dimen>
+    <dimen name="title">28dp</dimen>
+    <dimen name="poem">35dp</dimen>
+    <dimen name="small_button">40dp</dimen>
+    <dimen name="small_padding">15dp</dimen>
+</resources>
